@@ -18,8 +18,7 @@ candidate_options = []
 candidate_votes = {}
 
 # 1: Create a county list and county votes dictionary.
-county_list = []
-county_votes = {}
+
 
 
 # Track the winning candidate, vote count and percentage
@@ -28,9 +27,7 @@ winning_count = 0
 winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-county_count = ""
-winning_count = 0
-winning_percentage = 0
+
 
 
 # Read the csv and convert it into a list of dictionaries
@@ -50,7 +47,7 @@ with open(file_to_load) as election_data:
         candidate_name = row[2]
 
         # 3: Extract the county name from each row.
-        county_name = row[2]
+
 
         # If the candidate does not match any existing candidate add it to
         # the candidate list
@@ -100,11 +97,11 @@ with open(file_to_save, "w") as txt_file:
         # 6c: Calculate the percentage of votes for the county.
 
 
-         # 6d: Print the county results to the terminal.
+    # 6d: Print the county results to the terminal.
 
-         # 6e: Save the county votes to a text file.
+    # 6e: Save the county votes to a text file.
 
-         # 6f: Write an if statement to determine the winning county and get its vote count.
+    # 6f: Write an if statement to determine the winning county and get its vote count.
 
 
     # 7: Print the county with the largest turnout to the terminal.
